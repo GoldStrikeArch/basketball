@@ -170,3 +170,7 @@ REST_FRAMEWORK = {
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 #django_heroku.settings(locals())
+try:
+    from .local_settings import *
+except ImportError:
+    pass
