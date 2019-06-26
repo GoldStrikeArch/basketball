@@ -1,0 +1,137 @@
+{% extends "base_pages.html"%}
+{% load static %}
+{% block title %} | About me {% endblock %}
+{% block content %}
+
+<div class="container">
+      <div class="row">
+        <div class="col-sm-10 m-auto">
+          <!-- SLIDER WITH CAPTIONS -->
+          -->
+          <div id="slider5" class="carousel slide mb-5" data-ride="carousel">
+            <div class="carousel-inner">
+              <ol class="carousel-indicators">
+                <li
+                  class="active"
+                  data-target="#slider5"
+                  data-slide-to="0"
+                ></li>
+                <li data-target="#slider5" data-slide-to="1"></li>
+                <li data-target="#slider5" data-slide-to="2"></li>
+              </ol>
+
+              <div class="carousel-item active">
+                <img
+                  class="d-block img-fluid"
+                  src="{% static 'img/photo_2.jpeg' %}"
+                  alt="Second Slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block img-fluid"
+                  src="{% static 'img/photo_3.9F0Db.jpeg' %}"
+                  alt="Third Slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+              </div>
+            </div>
+            <!-- Controls -->
+            <a href="#slider5" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slider5" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-light">
+            <h1>About me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+              fuga eaque. Amet, assumenda aliquid tempore dolorum error eveniet
+              doloribus sed repellat quod, dolores fuga ipsam soluta. Aliquam
+              accusantium pariatur aut sint deleniti laborum ducimus voluptatem?
+              Architecto cumque quod suscipit officiis soluta, voluptate dicta
+              blanditiis similique praesentium temporibus adipisci debitis
+              labore!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+              fuga eaque. Amet, assumenda aliquid tempore dolorum error eveniet
+              doloribus sed repellat quod, dolores fuga ipsam soluta. Aliquam
+              accusantium pariatur aut sint deleniti laborum ducimus voluptatem?
+              Architecto cumque quod suscipit officiis soluta, voluptate dicta
+              blanditiis similique praesentium temporibus adipisci debitis
+              labore!
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="{% static 'img/stairs.JPG' %}"
+              alt=""
+              class="img-fluid rounded-circle d-none d-md-block about-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="p-4 bg-dark text-white">
+      <div class="container">
+        <h2 class="text-center">testimonials/Or someone Quotes</h2>
+        <div class="row text-center">
+          <div class="col">
+            <div class="slider">
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    IF YOU DONT FIGHT YOU DONT WIN
+                  </p>
+                  <footer class="blockquote-footer">
+                    My own quote
+                    <cite title="Company 1">Or other famous guy</cite>
+                  </footer>
+                </blockquote>
+              </div>
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Amazing course. Learned a lot from it. Now Im a superstar!
+                  </p>
+                  <footer class="blockquote-footer">
+                    Sam Smith
+                    <cite title="Company 2">....</cite>
+                  </footer>
+                </blockquote>
+              </div>
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    TRAIN TRAIN TRAIN TRAIN
+                  </p>
+                  <footer class="blockquote-footer">
+                    Meghan Williams From
+                    <cite title="Company 3">1991</cite>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}
